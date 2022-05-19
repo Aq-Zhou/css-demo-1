@@ -1,0 +1,458 @@
+.Test {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-image: url("../../images/Test/1/bg.png");
+  background-size: 100% 100%;
+  overflow: hidden;
+
+  .SwiperContainer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+
+      .swiper-slide {
+
+        .container {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+
+        // 1部分
+        .city {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 30%;
+          height: 16%;
+          animation: img-city .5s linear;
+        }
+
+        .title1 {
+          position: absolute;
+          left: 2%;
+          bottom: 20%;
+          width: 86%;
+          height: 8%;
+          animation: img-title1 .5s linear;
+        }
+
+        @keyframes img-title1 {
+          0% {
+            transform: translateX(-100%)
+          }
+          100% {
+            transform: translateX(0)
+          }
+        }
+        @keyframes img-city {
+          0% {
+            transform: translateX(-100%)
+          }
+          100% {
+            transform: translateX(0)
+          }
+        }
+        @keyframes img-line {
+          0% {
+            transform: translateY(-100%)
+          }
+          30% {
+            transform: translateY(-30%)
+          }
+          100% {
+            transform: translateY(0)
+          }
+        }
+
+        .title {
+          left: 2%;
+          width: 96%;
+          height: 9%;
+          animation: titleHidden 2s ease 1s 1 normal forwards;
+          @keyframes titleHidden {
+            from {
+              transform: translateY(100%);
+              opacity: 0;
+            }
+
+            to {
+              position: absolute;
+              bottom: 20%;
+              transform: translateY(0);
+              opacity: 1;
+
+            }
+          }
+        }
+
+
+        .line {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          animation: img-line .5s linear;
+        }
+
+        .yunnan {
+          position: absolute;
+          width: 10%;
+          bottom: 51%;
+          height: 3%;
+          left: 32%;
+        }
+
+        // 2部分
+        .route {
+          position: absolute;
+          left: 0%;
+          bottom: 0%;
+          width: 100%;
+
+          height: 100%;
+          animation: img-route 1s;
+          -webkit-animation: img-route 1s;
+        }
+
+        @keyframes img-route {
+          0% {
+            top: 0;
+            opacity: 0;
+          }
+          30% {
+            top: 25%;
+            opacity: .3;
+          }
+          60% {
+            top: 50%;
+            opacity: .6;
+          }
+          100% {
+            top: 100%;
+            opacity: 1;
+          }
+        }
+
+        .LOGO {
+          left: 11%;
+          width: 55%;
+          height: 8%;
+          animation: img-LOGO 0.75s ease-in-out 1s 1 normal forwards;
+        }
+
+        @keyframes img-LOGO {
+          from {
+            transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            position: absolute;
+            bottom: 42%;
+            transform: translateY(0);
+            opacity: 1;
+
+          }
+        }
+
+        .train {
+          position: absolute;
+          left: 52%;
+          bottom: 56%;
+          width: 38%;
+          height: 6%;
+        }
+
+        // 3部分
+        .G56 {
+
+          left: 16%;
+          // bottom: 34%;
+          width: 21%;
+          height: 3%;
+          animation: G56Hidden 1s ease 1s 1 normal forwards;
+        }
+
+        @keyframes G56Hidden {
+          from {
+            bottom: 100%;
+            transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            bottom: 34%;
+            transform: translateY(0);
+            opacity: 1;
+            position: absolute;
+          }
+        }
+
+        .BinHai {
+          left: 29%;
+          // top: 22%;
+          width: 24%;
+          height: 4%;
+          animation: BinHaiHidden 2s cubic-bezier(0.74, 0, 0.34, 0.99) 0.1s 1 normal forwards;
+        }
+        @keyframes BinHaiHidden {
+          from {
+            top: 0;
+            transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            position: absolute;
+            top: 22%;
+            // transform: translateY(0);
+            opacity: 1;
+
+          }
+        }
+
+        .Path {
+          animation: PathHidden 1s ease 0.5s 1 normal forwards;
+        }
+        @keyframes PathHidden {
+          from {
+            opacity: 0;
+          }
+
+          to {
+            position: absolute;
+            opacity: 1;
+            left: 0%;
+            top: 6%;
+            width: 100%;
+            height: 94%;
+          }
+        }
+
+        .TaiAn {
+          position: absolute;
+          left: 7%;
+          // top: 36%;
+          width: 20%;
+          height: 4%;
+          animation: TaiAnHidden 1s ease 1s 1 normal forwards;
+        }
+        @keyframes TaiAnHidden {
+          from {
+            top: 0;
+            // transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            top: 36%;
+            // transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .WeiShan {
+
+          top: 35%;
+          width: 20%;
+          height: 4%;
+          animation: WeiShanHidden 1s ease 1s 1 normal forwards;
+        }
+        @keyframes WeiShanHidden {
+          from {
+            top: 0;
+            // transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            // transform: translateY(0);
+            opacity: 1;
+            left: 56%;
+            position: absolute;
+          }
+        }
+
+        .XiangYun {
+          position: absolute;
+          left: 79%;
+
+          width: 20%;
+          height: 4%;
+          animation: XiangYunHidden 1s ease 1s 1 normal forwards;
+        }
+        @keyframes XiangYunHidden {
+          from {
+            top: 0;
+            // transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            // transform: translateY(0);
+            opacity: 1;
+            top: 32%;
+            position: absolute;
+          }
+        }
+
+        .XiPing {
+          position: absolute;
+          left: 66%;
+
+          width: 20%;
+          height: 4%;
+          animation: XiPingHidden 1s ease 1s 1 normal forwards;
+        }
+        @keyframes XiPingHidden {
+          from {
+            top: 0;
+            // transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            // transform: translateY(0);
+            opacity: 1;
+            top: 28%;
+            position: absolute;
+          }
+        }
+
+        .YangBi {
+          position: absolute;
+          left: 31%;
+          width: 20%;
+          height: 4%;
+          animation: YangBiHidden 1s ease 1s 1 normal forwards;
+        }
+        @keyframes YangBiHidden {
+          from {
+            top: 0;
+            // transform: translateY(100%);
+            opacity: 0;
+          }
+
+          to {
+            // transform: translateY(0);
+            opacity: 1;
+            top: 32%;
+            position: absolute;
+          }
+        }
+
+        // 4部分
+        .AroundRoad {
+          position: absolute;
+          left: 65%;
+          top: 44%;
+          width: 20%;
+          height: 4%;
+        }
+
+        .JiMountain {
+          position: absolute;
+          left: 64%;
+          top: 16%;
+          width: 15%;
+          height: 4%;
+        }
+
+        .Tower {
+          position: absolute;
+          left: 32%;
+          top: 46%;
+          width: 20%;
+          height: 4%;
+        }
+
+        .LOGO2 {
+          position: absolute;
+          left: 9%;
+          bottom: 28.6%;
+          width: 55%;
+          height: 8%;
+        }
+
+        .Ruins {
+          position: absolute;
+          left: 35%;
+          bottom: 38%;
+          width: 21%;
+          height: 4%;
+        }
+
+        .LuoQuan {
+          position: absolute;
+          right: 13%;
+          bottom: 50%;
+          width: 27%;
+          height: 4%;
+        }
+
+        .ErHaiPark {
+          position: absolute;
+          left: 62%;
+          bottom: 36%;
+          width: 21%;
+          height: 4%;
+        }
+
+        .CangMountain {
+          position: absolute;
+          left: 14%;
+          bottom: 43%;
+          width: 37%;
+          height: 4%;
+        }
+
+        .AncientCity {
+          position: absolute;
+          left: 37%;
+          bottom: 48%;
+          width: 20%;
+          height: 4%;
+        }
+
+        .NanZhao {
+          position: absolute;
+          left: 46%;
+          top: 20%;
+          width: 23%;
+          height: 4%;
+        }
+
+        .Palace {
+          position: absolute;
+          left: 15%;
+          bottom: 48%;
+          width: 20%;
+          height: 4%;
+        }
+
+        .SoIsland {
+          position: absolute;
+          right: 18%;
+          bottom: 48%;
+          width: 17%;
+          height: 4%;
+        }
+
+        .title2 {
+          position: absolute;
+          left: 2%;
+          bottom: 15%;
+          width: 96%;
+          height: 10%;
+        }
+      }
+    }
+  }
+}
+
